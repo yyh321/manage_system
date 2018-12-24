@@ -134,3 +134,79 @@ h6 {font-size:12px;}
 	background-color: #62d2f9;
 }
 
+.headlink {
+	margin: 30px 20px 0 0;
+}
+
+.headlink li {
+	float: left;
+	margin-left: 15px;
+}
+
+.headlink li a {
+	padding-left: 20px;
+	background: url(../image/main_link_ico.png) no-repeat;
+}
+.headlink li#link_0 a {
+	background-position: 0 0;
+}
+.headlink li#link_1 a {
+	background-position: 0 -150px;
+}
+.headlink li#link_2 a {
+	background-position: 0 -50px;
+}
+.headlink li#link_3 a {
+	background-position: 0 -190px;
+}
+.headlink li#link_4 a {
+	background-position: 0 -100px;
+}
+/*顶部导航菜单结束*/
+/*左侧导航菜单开始*/
+.leftmenu {
+	position:absolute;
+	width: 187px;
+	top: 70px;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+	background: url(../image/left_bg.png) repeat-y;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.leftmenu dl dt {
+	width: 187px;
+	height: 26px;
+	line-height: 26px;
+	text-indent: 20px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 14px;
+	background: #009beb url(../image/ico_small.png) right 10px no-repeat;
+}
+.leftmenu dl dd ul {
+	padding: 5px 0;
+}
+.leftmenu dl dd ul li {
+	float: right;
+	width: 170px;
+	height: 26px;
+	line-height: 26px;
+	text-indent: 10px;
+}
+.leftmenu dl dd ul li a {
+	display: block;
+	width: 169px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #edfbff;
+	color: #333;
+}
+.leftmenu dl dd ul li a:hover {
+	color: #009beb;
+	border-top: 1px solid #B8C8D2;
+	border-left: 1px solid #B8C8D2;
+	border-bottom: 1px solid #B8C8D2;
+}
+/*左侧导航菜单结束*/
