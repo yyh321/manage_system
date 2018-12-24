@@ -160,6 +160,14 @@
 	</div>
 	<!--left menu end-->
 
+	<div class="rightmain">
+		<div class="rightcontent">
+			<iframe src="item.html" frameborder="0" scrolling="yes" id="main" name="main">
+
+			</iframe>
+		</div>
+	</div>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script>
 		$(function(){
@@ -174,9 +182,11 @@
 				if(false == $('#leftmenu').is(':visible')){
 					$('#leftmenu').css('display','block');
 					$(this).children('a').text('隐藏菜单');
+					$('body').addClass('showleftmenu').removeClass('hideleftmenu');
 				} else {
 					$('#leftmenu').css('display','none');
 					$(this).children('a').text('显示菜单');
+					$('body').addClass('hideleftmenu').removeClass('showleftmenu');
 				}
 			});
 
