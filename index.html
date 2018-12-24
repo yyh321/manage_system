@@ -44,7 +44,7 @@
 				<dt>栏目管理</dt>
 				<dd>
 					<ul class="clearfix">
-						<li><a href="javascript:;">栏目管理</a></li>
+						<li><a href="javascript:;" _link="item.html">栏目管理</a></li>
 					</ul>
 				</dd>
 			</dl>
@@ -52,7 +52,7 @@
 				<dt>内容管理</dt>
 				<dd>
 					<ul class="clearfix">
-						<li><a href="javascript:;">公司介绍</a></li>
+						<li><a href="javascript:;" _link="company.html">公司介绍</a></li>
 						<li><a href="javascript:;">新闻中心</a></li>
 						<li><a href="javascript:;">产品展示</a></li>
 						<li><a href="javascript:;">公司相册</a></li>
@@ -162,7 +162,7 @@
 
 	<div class="rightmain">
 		<div class="rightcontent">
-			<iframe src="item.html" frameborder="0" scrolling="yes" id="main" name="main">
+			<iframe src="company.html" frameborder="0" scrolling="yes" id="main" name="main">
 
 			</iframe>
 		</div>
@@ -202,6 +202,14 @@
 				}
 			});
 
+			//左侧菜单切换
+			$('#leftmenu dl dd ul li a').click(function(){
+				var link = $(this).attr('_link');
+				$('#main').attr('src',link);
+				$(this).addClass('current-menuleft').parent().siblings().change().removeClass('current-menuleft');
+				$(this).parents('dl').siblings().find('dd ul li a').removeClass('current-menuleft');
+
+			})
 
 		})
 	</script>

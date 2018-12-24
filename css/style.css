@@ -210,6 +210,14 @@ h6 {font-size:12px;}
 	border-left: 1px solid #B8C8D2;
 	border-bottom: 1px solid #B8C8D2;
 }
+
+.leftmenu dl dd ul li a.current-menuleft {
+    background: #fff url(../image/ico_small.png) right -90px no-repeat;
+    font-weight: bold;
+    border-top: 1px solid #B8C8D2;
+    border-left: 1px solid #B8C8D2;
+    border-bottom: 1px solid #B8C8D2;
+}
 /*左侧导航菜单结束*/
 
 /*右侧主体内容开始*/
@@ -340,6 +348,24 @@ body.hideleftmenu .rightmain {
 	margin: 10px;
 }
 
+/*公司介绍*/
 
+.gsjs-form {
+	margin: 10px;
+}
+.gsjs-form dl {
+	margin: 20px 0;
+}
 
+.gsjs-title {
+	width: 10%;
+	font-size: 14px;
+}
 
+.textarea-default {
+	width: 600px;
+	height: 90px;
+}
+.gsjs_btntit {
+    text-indent: -9999px;
+}
